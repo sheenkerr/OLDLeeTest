@@ -10,10 +10,10 @@
   width: 100%;
   z-index: 10;
 }
-.topnav img{ max-width: 100px;}
+.topnav .logo img{ max-width: 100px;}
+.topnav .logo{padding: 0;}
 nav {
   float: right;
-margin-top: 10px;
   font-size: 2em;
 }
 .topnav a {
@@ -40,7 +40,6 @@ margin-top: 10px;
   display: none;
 }
 @media screen and (max-width: 600px) {
-  .nav-container{;}
   .topnav a:not(.logo) {display: none;}
   .topnav a.icon {
     float: right;
