@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="nav-container">
+        <div class="topnav" id="myTopnav">
+        <a href="/" class="logo">   
+        <img src="https://mondrian.mashable.com/uploads%252Fcard%252Fimage%252F918220%252F316bce31-4c38-4f3b-b743-a17406175286.png%252F950x534__filters%253Aquality%252880%2529.png?signature=ASyPwdNVsAIo5E7uzfpoydo-rmc=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com"/>
+          </a>
+          <nav>
+        <a href="/Projects.html">Projects</a>
+        <a href="/contact">Contact Us</a>
+        <a href="about-us.html" >About Us</a>
+        <a href="/cost.html" >Cost Estimator</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+            </nav>
+      </div>
+        </div>
+      <!-- Script For mobile view -->
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+        <div style="margin-bottom: 100px"></div>
+      
+</head>
+<body>
+  
+    <div class="slideshow-container">
+        <div class="imgSlides" style="background: white; height: 500px">
+          <img src="#" style="width:100%">
+           <div class="carousel-caption">
+                <h3>Header</h3>
+                <p>Info</p>
+              </div>
+        </div>
+        <div class="imgSlides" style="background: white; height: 500px; width: 100%">
+          <img src="#" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <!-- Script for the carousel to work -->
+      <script>
+      var slideIndex = [1,1];
+      var slideId = ["imgSlides"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+      }
+      </script>
+      
+      </head>
+      <body>
+          <section id="boxes">
+      <!-- Project Section -->
+      
+          <h2>Previous Projects (Add Projects and Links)</h2>
+      <div class="proj-container">
+      <div class="box">
+        <h3>Header</h3>
+        <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg "></div>
+      <div class="box">
+                <h3>Header</h3>
+          <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg"></div>
+      
+      <div class="box">
+                <h3>Header</h3>
+          <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg"></div>
+      <div class="box">
+        <h3>Header</h3>
+        <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg"></div>
+      <div class="box">
+                <h3>Header</h3>
+          <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg"></div>
+      <div class="box">
+                <h3>Header</h3>
+          <img src="https://cdn.redshift.autodesk.com/2017/10/Air-Force-Academy-Scaffold-Design_header.jpg"></div>
+      </div>
+          </section>
+      <!-- Why Choose Us (Key highlights)-->
+      <div class="key-highlights">
+         Because _________________________ <br/>
+          List of reasons
+          Cool background image
+      </div>
+      
+</body>
+
+</html>
+
+
