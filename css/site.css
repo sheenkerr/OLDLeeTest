@@ -19,17 +19,15 @@
   background-color: gray;
   position: fixed;
   top: 0;
-  width: 100%;
+  /* height: 84.41px;  */
+  /* Change to height of logo  */
   z-index: 10;
-}
-
-.topnav .logo { margin: 0; padding: 0; top: 0; bottom: 0;
 }
 .topnav .logo img {
   max-width: 150px;
 }
 .topnav .logo {
-  padding: 0;
+  padding: 0 0; height: 84.41px;
 }
 nav {
   float: right;
@@ -141,12 +139,6 @@ h2 {
     float: right;
     display: block;
     padding: 22px 16px;
-  }
-  .topnav img {
-    max-width: 200px;
-    top: 0;
-    float: center;
-    padding: 0;
   }
   .topnav.responsive a.icon {
     float: right;
