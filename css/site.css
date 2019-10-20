@@ -63,12 +63,17 @@ nav {
 }
 /* Slideshow*/
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
+  max-width: 1000px;
+  max-height: 460px;
 }
 .slideshow-container img {
-  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  max-height: 460px;
 }
 /* Next & previous buttons */
 .prev,
@@ -99,6 +104,16 @@ nav {
 .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+.carousel-caption {
+  display: inline-block;
+  font-size: 2em;
+  color: white;
+  position: absolute; /* remove from document flow */
+  left: 50%; /* center horizontally */
+  top: 50%; /* center vertically */
+  transform: translate(-50%, -50%);
 }
 
 .key-highlights {
