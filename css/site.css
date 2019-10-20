@@ -127,9 +127,9 @@ nav {
 
 .key-highlights {
   background: violet;
-  height: 150px;
+  height: 200px;
 }
-
+/* Scaffolding Service */
 .proj-container {
   display: inline-flex;
   position: relative;
@@ -141,7 +141,12 @@ nav {
 h2 {
   margin: 30px 10px;
 }
-
+.proj-Link {
+  text-decoration: none;
+}
+.proj-Link:visited {
+  color: white;
+}
 /* Boxes */
 #boxes .box {
   flex: 33.33%;
@@ -214,5 +219,6 @@ h2 {
     flex: 100%;
     width: 100%;
     height: 100%;
+    /* padding: 10px; */
   }
 }
