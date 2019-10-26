@@ -170,6 +170,7 @@ h2 {
   position: absolute;
   background: black;
 }
+
 /* Mobile View */
 @media screen and (max-width: 633px) {
   .topnav a:not(.logo) {
