@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Developer's Survey Form</title>
+    <!-- https://dev.to/uma/responsive-form-using-html-and-css-4l59 -->
+  </head>
+  <script>
+    function Success() {
+      document.getElementById("survey-form").style.display = "none";
+      document.getElementById("success-msg").style.display = "block";
+    }
+  </script>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Web Developer's Survey Form</h1>
+        <p id="description">Thank you for taking the time to do this survey</p>
+      </header>
+      <div id="success-msg" style="display: none">
+        <b> Thank you for getting in touch!</b><br /><br />
+        We appreciate you contacting us! 
+        One of our colleagues will get back in touch with you soon! <br />
+        Have a great day! <br />
+      </div>
+      <iframe name="dummyframe" id="dummyframe" style="display: none" onchange="Success()"></iframe>
+      <form
+        id="survey-form"
+        target="dummyframe"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbx8zpm8W4oiQnl9mK2GMTl7iIEtq2t1sPYFUKaLy_zxMcTQgg/exec"
+        >
+        <div class="form-input">
+          <label>Your Name</label>
+          <input
+            type="text"
+            name="Name"
+            placeholder="Enter your name"
+            class="form-input-size"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label>Enter the Address</label>
+          <input
+            type="text"
+            name="Address"
+            placeholder="Enter your Address"
+            class="form-input-size"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label>Start Date of Project</label>
+          <input
+            type="date"
+            name="StartDate"
+            class="form-input-size"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label>End Date of Project</label>
+          <input type="date" name="EndDate" class="form-input-size" required />
+        </div>
+        <div class="form-input">
+          <label>Phone Number (+65)</label>
+          <input
+            type="tel"
+            name="Contact"
+            placeholder="91234567"
+            pattern="[8-9]{1}[0-9]{7}" required title="Enter a Valid Singapore Mobile Number"   class="form-input-size"
+          />
+        </div>
+
+        <div class="form-input">
+          <p>Type of Staging Required</p>
+          <select name="Type" id="dropdown" class="form-input-size" required>
+            <option value="Timber">Timber Scaffolding</option>
+            <option value="Alumninum">Alumninum Scaffolding</option>
+            <option value="Opera">Chinese Opera House</option>
+          </select>
+        </div>
+
+        <div class="form-input">
+          <p>Other Information about your project</p>
+          <textarea
+            type="text"
+            name="OtherInfo"
+            placeholder="Enter Any Other Information about your Project Here"
+          ></textarea>
+        </div>
+
+        <div class="form-input">
+          <button type="submit" id="submit"">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
